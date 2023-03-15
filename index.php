@@ -169,6 +169,127 @@ var_dump(is_null($x));
 */
 
 /*
+    Array
 
+$programmingLanguages = ['PHP','Java','Python'];
+echo'<pre>';
+print_r($programmingLanguages);
+echo'<pre>';
+echo count($programmingLanguages);*/
+
+/*
+    Add Elements in Array
+
+$programmingLanguages = ['PHP','Java','Python'];
+echo'<pre>';
+print_r($programmingLanguages);
+echo'<pre>';
+echo count($programmingLanguages);
+
+$programmingLanguages[]='C++';
+echo'<pre>';
+print_r($programmingLanguages);
+echo'<pre>';
+echo count($programmingLanguages);
 */
+
+/*
+    Add multiple elements using array_push
+    
+$programmingLanguages = ['PHP','Java','Python'];
+echo'<pre>';
+print_r($programmingLanguages);
+echo'<pre>';
+echo count($programmingLanguages);
+
+array_push($programmingLanguages , 'C++' , 'C');
+echo'<pre>';
+print_r($programmingLanguages);
+echo'<pre>';
+echo count($programmingLanguages);
+*/
+
+/*
+    Name keys in array
+
+$programmingLanguages=[
+    'php' => '8.0',
+    'python' => '3.9'
+];
+echo'<pre>';
+print_r($programmingLanguages);
+echo'<pre>';
+
+echo $programmingLanguages['php'];
+*/
+
+/*
+    Multi-dimensional arrays
+
+$programmingLanguages=[
+    'php' => [
+        'creator' => 'Rasmus Lerdorf',
+        'extension' => '.php',
+        'website' => 'www.php.net',
+        'isOpenSource' => true,
+        'versions' => [
+            ['version' => 8,'releaseDate' => 'Nov 26,2020'],
+            ['version' => 7.4,'releaseDate' => 'Nov 28,2019']
+        ]
+    ],
+    'python' => [
+        'creator' => 'Guido Van Rossum',
+        'extension' => '.py',
+        'website' => 'www.python.org',
+        'isOpenSource' => true,
+        'versions' => [
+            ['version' => 3.9,'releaseDate' => 'Oct 5,2020'],
+            ['version' => 3.8,'releaseDate' => 'Oct 14,2019']
+        ]
+    ]
+];
+echo'<pre>';
+print_r($programmingLanguages);
+echo'<pre>';
+
+echo $programmingLanguages['php']['website'];
+*/
+
+/*
+    Removing element from the end
+
+$array = ['a','b','c','d','e'];
+array_pop($array);
+echo'<pre>';
+print_r($array);
+echo'<pre>';
+*/
+
+/*
+    Removing element from the beginning
+
+$array = ['a','b','c','d','e'];
+array_shift($array);
+echo'<pre>';
+print_r($array);
+echo'<pre>';
+*/
+
+/*
+    Removing element by key
+
+$array = ['a','b','c','d','e'];
+unset($array[2]);
+echo'<pre>';
+print_r($array);
+echo'<pre>';
+*/
+
+/*
+    casting to Array
+
+$x = 'foo';
+var_dump((array) $x);
+*/
+
 ?>
