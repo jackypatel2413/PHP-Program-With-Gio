@@ -161,7 +161,14 @@ $x = (int)'5';
 var_dump($x);
 */
 
+/*
+    Null
 
+$x = null;
+var_dump(is_null($x));
+*/
 
+/*
 
+*/
 ?>
